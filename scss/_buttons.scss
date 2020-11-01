@@ -1,0 +1,79 @@
+.btn {
+    display: inline-block;
+    font-size: $font-size-small;
+    font-weight: $font-weight-big;
+    text-align: center;
+    line-height: 19.5px;
+    color: $color-base;
+    background-color: $color-blue;
+    border: 0;
+    padding: 23px 75px;
+    border-radius: 10px;
+    vertical-align: middle;
+    user-select: none;
+    cursor: pointer;
+    overflow: visible;
+    outline: none;
+    &:hover {
+        opacity: 0.9;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 1px 12px 11px -5px #cacaca;
+    }
+    &:active {
+        background-color: #47869a;
+    }
+    &--buy,
+    &--sold {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+    }
+    &--sold {
+        background-color: $color-sold;
+        &:active {
+            background-color: $color-black;
+        }
+    }
+    &--more {
+        font-size: 14px;
+        font-weight: $font-weight-base;
+        color: $color-black;
+        background-color: transparent;
+        border: 1px solid #cacaca;
+        padding: 23px 129px;
+        line-height: 17.07px;
+        &:active {
+            background-color: #eeeeee;
+        }
+    }
+    &--subscribe {
+        font-size: 14px;
+        &:focus {
+            box-shadow: 1px 8px 11px -5px #585858;
+        }
+        &:active {
+            background-color: #59a2b9;
+        }
+    }
+}
+
+#movetop {
+    display: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    position: fixed;
+    bottom: 20px;
+    right: 9%;
+    z-index: 997;
+    outline: none;
+    cursor: pointer;
+    width: 59px;
+    height: 59px;
+    background: $color-blue;
+}

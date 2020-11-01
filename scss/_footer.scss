@@ -1,0 +1,101 @@
+.footer__inner {
+    display: flex;
+    background-color: #1f2021;
+    padding: 89px 80px;
+}
+
+.footer__subscribe-text {
+    font-size: 28px;
+    padding-right: 64px;
+    line-height: 25.54px;
+    & p {
+        margin: 0;
+    }
+}
+
+.footer__title {
+    font-weight: $font-weight-big;
+    font-size: 48px;
+    line-height: 58.51px;
+    margin: 0;
+    padding-bottom: 26px;
+}
+
+//subscribe input
+.subscribe-form__input {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.subscribe-form__checkbox {
+    position: relative;
+}
+
+.checkbox-subscribe {
+    display: none;
+}
+
+.checkbox {
+    font-size: 14px;
+    padding-left: 36px;
+    &::before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $color-blue;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        border-radius: 3px;
+        z-index: 1;
+        -webkit-transition: background-color 0.1s linear;
+        -o-transition: background-color 0.1s linear;
+        transition: background-color 0.1s linear;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 8px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 10 8' fill='none'%3E%3Cpath d='M4.5266 7.388C4.07322 7.84139 3.33756 7.84139 2.8844 7.388L0.340036 4.84358C-0.113345 4.3904 -0.113345 3.65474 0.340036 3.20156C0.793199 2.74817 1.52885 2.74817 1.98223 3.20156L3.49817 4.71732C3.61261 4.83154 3.79839 4.83154 3.91304 4.71732L8.01777 0.612505C8.47093 0.159113 9.20658 0.159113 9.65996 0.612505C9.87768 0.830229 10 1.12563 10 1.43351C10 1.74139 9.87768 2.03679 9.65996 2.25452L4.5266 7.388Z' fill='white'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 5px;
+        top: 6px;
+        z-index: 2;
+        opacity: 0;
+        -webkit-transition: opacity 0.2s linear;
+        -o-transition: opacity 0.2s linear;
+        transition: opacity 0.2s linear;
+    }
+}
+
+.checkbox-subscribe:checked+.checkbox {
+    &::before {
+        background-color: $color-blue;
+    }
+    &::after {
+        opacity: 1;
+    }
+}
+
+.email {
+    padding: 22px 33px 26px;
+    border: 0;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-right: 16px;
+    width: 300px;
+    outline: 0;
+    &::placeholder {
+        color: $color-black;
+    }
+    &:focus {
+        outline: 0;
+    }
+    &.invalid {
+        box-shadow: inset 0 0 19px rgba(255, 0, 0, 0.7);
+    }
+}
