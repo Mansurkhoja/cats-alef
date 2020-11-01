@@ -56,6 +56,7 @@ textarea {
     background-color: #6ebbd3;
     border: 0;
     padding: 23px 75px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -83,7 +84,9 @@ textarea {
 
 .btn--buy,
 .btn--sold {
+    -webkit-border-top-left-radius: 0;
     border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
     border-top-right-radius: 0;
     width: 100%;
 }
@@ -128,9 +131,11 @@ textarea {
     border: none;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     font-family: inherit;
     font-size: inherit;
@@ -170,12 +175,15 @@ textarea {
 .header__inner {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     padding-bottom: 56px;
 }
@@ -193,12 +201,15 @@ textarea {
 .header__links {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
 }
 
@@ -229,6 +240,7 @@ textarea {
 .header__phone span {
     position: absolute;
     right: 0;
+    top: -webkit-calc(100% + 3px);
     top: calc(100% + 3px);
 }
 
@@ -245,6 +257,7 @@ textarea {
 .sort__header {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     color: #000000;
     margin: 37px 0 13px;
@@ -260,9 +273,11 @@ textarea {
 .sort__list {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
 }
 
@@ -293,12 +308,14 @@ textarea {
     position: absolute;
     min-width: 156px;
     max-height: 120px;
+    top: -webkit-calc(100% + 5px);
     top: calc(100% + 5px);
     left: -10px;
     padding: 5px;
     overflow: hidden;
     overflow-y: auto;
     background-color: #e2e2e2;
+    -webkit-border-radius: 6px;
     border-radius: 6px;
     -webkit-box-shadow: 2px 3px 7px rgba(64, 64, 64, 0.5);
     box-shadow: 2px 3px 7px rgba(64, 64, 64, 0.5);
@@ -308,6 +325,7 @@ textarea {
 .dropdown-options::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.5);
     box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.5);
+    -webkit-border-radius: 6px;
     border-radius: 6px;
     background-color: #f3f3f3;
 }
@@ -315,10 +333,12 @@ textarea {
 .dropdown-options::-webkit-scrollbar {
     width: 10px;
     background-color: #f3f3f3;
+    -webkit-border-radius: 6px;
     border-radius: 6px;
 }
 
 .dropdown-options::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
     border-radius: 4px;
     background-color: rgba(128, 128, 128, 0.9);
 }
@@ -326,6 +346,7 @@ textarea {
 .select {
     padding: 5px 3px 5px 5px;
     cursor: pointer;
+    -webkit-border-radius: 6px;
     border-radius: 6px;
     font-size: 16px;
 }
@@ -351,8 +372,10 @@ textarea {
 .cat-items {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -372,6 +395,7 @@ textarea {
     top: 36px;
     left: 32px;
     background: #e62d2d;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     line-height: 19.5px;
     font-size: 16px;
@@ -417,15 +441,18 @@ textarea {
 .cat-item__info {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-align: end;
     -ms-flex-align: end;
+    -webkit-align-items: end;
     align-items: end;
 }
 
 .cat-type {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 0px;
+    -webkit-flex: 0 1 0;
     flex: 0 1 0;
     padding-left: 18px;
     font-size: 12px;
@@ -436,10 +463,12 @@ textarea {
 .cat-feet {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     font-size: 16px;
     font-weight: 700;
@@ -465,9 +494,11 @@ textarea {
 .more {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
     margin: 68px 0 83px;
 }
@@ -475,6 +506,7 @@ textarea {
 .footer__inner {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     background-color: #1f2021;
     padding: 89px 80px;
@@ -501,6 +533,7 @@ textarea {
 .subscribe-form__input {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     margin-bottom: 24px;
 }
@@ -527,6 +560,7 @@ textarea {
     position: absolute;
     top: 1px;
     left: 1px;
+    -webkit-border-radius: 3px;
     border-radius: 3px;
     z-index: 1;
     -webkit-transition: background-color 0.1s linear;
@@ -563,6 +597,7 @@ textarea {
     padding: 22px 33px 26px;
     border: 0;
     margin: 0;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     font-size: 14px;
     margin-right: 16px;
@@ -607,11 +642,13 @@ textarea {
     .sort__header {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
     }
     .cat-items {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
     }
     .cat-item {
@@ -626,6 +663,7 @@ textarea {
     }
     .cat-item__info {
         -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .cat-type {
@@ -641,10 +679,12 @@ textarea {
         padding: 30px;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .footer__subscribe-text {
@@ -659,9 +699,11 @@ textarea {
     .footer-form {
         display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
     }
 }
@@ -683,16 +725,20 @@ textarea {
     .header__links {
         display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         flex-direction: column;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
+        -webkit-justify-content: center;
         justify-content: center;
         -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
+        -webkit-flex: 0 1 auto;
         flex: 0 1 auto;
         padding: 50px 15px 15px;
         background-color: #1c1e1d;
@@ -700,6 +746,7 @@ textarea {
         top: -40px;
         right: -15px;
         width: 100vw;
+        height: -webkit-calc( 100vh + 60px);
         height: calc( 100vh + 60px);
         display: none;
     }
@@ -709,10 +756,12 @@ textarea {
     .nav {
         display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         flex-direction: column;
         text-align: center;
         margin-top: 30px;
@@ -727,10 +776,12 @@ textarea {
     .header__phone {
         display: -webkit-box;
         display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         flex-direction: column;
         margin: 20px 0 0 0;
         text-align: center;
@@ -743,6 +794,7 @@ textarea {
     }
     .footer__inner {
         -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .header__found {
@@ -770,6 +822,7 @@ textarea {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
     .email {
@@ -785,12 +838,16 @@ textarea {
     }
     .sort__header {
         -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     .sort__title {
         width: 100%;
         margin: 0 0 10px 0;
         text-align: center;
+    }
+    .email-submit {
+        height: 55px;
     }
 }
 
