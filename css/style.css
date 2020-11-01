@@ -117,11 +117,6 @@ textarea {
     font-size: 14px;
 }
 
-input[type=submit] {
-    background-color: #6EBBD3;
-    border: none;
-}
-
 .btn--subscribe:focus {
     -webkit-box-shadow: 1px 8px 11px -5px #585858;
     box-shadow: 1px 8px 11px -5px #585858;
@@ -852,8 +847,13 @@ input[type=submit] {
         margin: 0 0 10px 0;
         text-align: center;
     }
-    .email-submit {
-        height: 55px;
+    .discount {
+        top: 10px;
+        left: 5px;
+    }
+    .wishlist {
+        top: 10px;
+        right: 5px;
     }
 }
 
